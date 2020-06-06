@@ -2,7 +2,7 @@
 layout: post
 title: 前传：学习 JAVA 8 - StreamAPI （1）
 categories: SpringWebFlux
-description: Spring Web Flux 学习笔记, Stream。
+description: Spring Web Flux 学习笔记, Stream, Stream Api
 keywords: Spring Web Flux, Stream, Reactor
 ---
 
@@ -17,7 +17,7 @@ Arrays.stream(ARRAY)
         .forEach(System.out::println);
 ```
 
-```
+```java
 // Reactor实现
 Flux.fromArray(ARRAY)
         .filter(num -> num % 2 == 0)
