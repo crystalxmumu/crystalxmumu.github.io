@@ -1,18 +1,16 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 小飞猪
+keywords: crystalxmumu, 小飞猪, hk, 孔雀王子
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是小飞猪，编码使我快乐，犹如猪在天上飞。
 
-仰慕「优雅编码的艺术」。
-
-坚信熟能生巧，努力改变人生。
+向上而生，向善而行。
 
 ## 联系
 
@@ -29,7 +27,7 @@ permalink: /about/
 </ul>
 
 
-## Skill Keywords
+## 技能
 
 {% for skill in site.data.skills %}
 ### {{ skill.name }}

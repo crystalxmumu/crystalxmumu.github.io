@@ -1,19 +1,17 @@
-- name: Software Engineer Keywords
+- name: Java 开发
   keywords:
-      - Java
-      - C++
-      - Python
+      - Spring Boot/Cloud/All
+      - SSM
+      - Maven
       - Design Patterns
 
-- name: Mobile Developer Keywords
+- name: 移动开发
   keywords:
       - Android
-      - Reverse Engineering
+      - React/React Native
+      - 公众号/小程序
 
-- name: Windows Developer Keywords
+- name: 其他
   keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - Docker
+      - Jenkins
