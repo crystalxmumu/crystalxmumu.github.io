@@ -54,7 +54,7 @@ Stream 是 Java8 中处理集合的关键抽象概念，它可以指定你希望
 
 3-5的具体类型Stream提供了一些额外的方法，下面创建Stream时有用到。它们之间的类图关系如下：
 
-<img src="/images/posts/spring_web_flux/01_stream_diagram.png" width="80%" alt="Stream API Class Diagram" />
+<img src="/images/posts/spring_web_flux/01_stream_diagram.png" width="100%" alt="Stream API Class Diagram" />
 
 ## 创建Stream
 ==注意：以下创建Stream的方式仅为演示使用，因为Stream进行中间操作或终端操作后就会关闭，不可重复使用，因此你在使用的时候应该按函数式编程方式编写代码。==
