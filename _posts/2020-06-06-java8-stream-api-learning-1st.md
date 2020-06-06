@@ -27,7 +27,7 @@ Flux.fromArray(ARRAY)
 
 > 以上代码见JdkStreamAndReactorTest。
 
-我们发现他们的写法是相似的，都是采用[函数式编程](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B)，并且其中有很多函数(操作符)是一样的，抛除他们的异同点（后面会讲），我们先来了解下 Java8 的 Stream API，方便我们后面可以更快的了解 Reactor 中的各种操作符。
+我们发现他们的写法是相似的，都是采用[函数式编程](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B){:target="_blank"}，并且其中有很多函数(操作符)是一样的，抛除他们的异同点（后面会讲），我们先来了解下 Java8 的 Stream API，方便我们后面可以更快的了解 Reactor 中的各种操作符。
 
 # Stream API
 Java8中有两大最为重要的改变：第一个是 Lambda 表达式；另外一个则是 Stream API(java.util.stream.*)。
@@ -123,8 +123,8 @@ Stream<Integer> buildStream = builder.build();
 
 > 以上代码见CreateStreamTest。
 
-源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>
+源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>{:target="_blank"}
 以上是本次笔记的内容，我们下次见。
 
 # 参考
-1. [【Java8新特性】关于Java8的Stream API，看这一篇就够了](https://www.cnblogs.com/binghe001/p/12940721.html)
+1. [【Java8新特性】关于Java8的Stream API，看这一篇就够了](https://www.cnblogs.com/binghe001/p/12940721.html){:target="_blank"}
