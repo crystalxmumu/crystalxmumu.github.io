@@ -57,9 +57,9 @@ Stream 是 Java8 中处理集合的关键抽象概念，它可以指定你希望
 <img src="/images/posts/spring_web_flux/01_stream_diagram.png" width="100%" alt="Stream API Class Diagram" />
 
 ## 创建Stream
-==注意：以下创建Stream的方式仅为演示使用，因为Stream进行中间操作或终端操作后就会关闭，不可重复使用，因此你在使用的时候应该按函数式编程方式编写代码。==
+`注意：以下创建Stream的方式仅为演示使用，因为Stream进行中间操作或终端操作后就会关闭，不可重复使用，因此你在使用的时候应该按函数式编程方式编写代码。`
 
-1. 集合获取Stream
+**1. 集合获取Stream**
 
 ```java
 // 返回以此集合作为源的顺序 Stream
@@ -69,7 +69,7 @@ Stream<Integer> stream = collection.stream();
 Stream<Integer> parallelStream = collection.parallelStream();
 ```
 
-2. 数组创建Stream
+**2. 数组创建Stream**
 
 ```java
 // 创建数组Stream
@@ -81,7 +81,7 @@ DoubleStream doubleStream = Arrays.stream(doubleArray);
 IntStream intStream2 = Arrays.stream(intArray, 1, 3);
 ```
 
-3. 值创建Stream
+**3. 值创建Stream**
 
 ```java
 // 构建Integer类型的Stream
@@ -91,7 +91,7 @@ IntStream stream = IntStream.of(14, 2, 31, 47, 5, 6, 9, 1, 33, 2, 6);
 Stream<String> stringStream = Stream.of("Hello, Stream Api.");
 ```
 
-4. 函数创建Stream
+**4. 函数创建Stream**
 
 ```java
 // 方式1：使用generate方式创建一个新的无限无序Stream流
@@ -101,7 +101,7 @@ Stream<Integer> generateStream = Stream.generate(RandomUtil::randomInt);
 IntStream iterateStream = IntStream.iterate(1, n -> n + 1);
 ``` 
 
-5. 其他方式创建Stream
+**5. 其他方式创建Stream**
 
 ```java
 // 方式1：创建空的顺序流
