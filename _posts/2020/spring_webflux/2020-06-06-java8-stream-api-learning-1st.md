@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 前传：学习 JAVA 8 - StreamAPI （1）
+title: 前传：学习 JAVA 8 - 掌握 Stream API （1）
 categories: SpringWebFlux
 description: Spring Web Flux 学习笔记, Stream, Stream Api
 keywords: Spring Web Flux, Stream, Reactor
