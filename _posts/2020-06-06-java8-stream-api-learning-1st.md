@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 前传：学习 JAVA 8 - StreamAPI （1）
-categories: Spring Web Flux
+categories: SpringWebFlux
 description: Spring Web Flux 学习笔记, Stream。
 keywords: Spring Web Flux, Stream, Reactor
 ---
@@ -123,6 +123,7 @@ Stream<Integer> buildStream = builder.build();
 
 > 以上代码见CreateStreamTest。
 
+源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>
 以上是本次笔记的内容，我们下次见。
 
 # 参考
