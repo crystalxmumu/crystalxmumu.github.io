@@ -7,7 +7,7 @@ keywords: Spring Web Flux, Stream, Reactor
 ---
 
 # 影子
-在学习Spring Web Flux之前，我们先来了解JDK的Stream，虽然他们之间没有直接的关系，有趣的是 Spring Web Flux 基于 Reactive Stream，他们中都带了 Stream。现有需求如下：筛选出一个数组中的偶数，每个增加 100 后输出到控制台，我们来看下使用JDK Stream和使用Reactor（Reactive Stream的一种实现，后面会讲）编写的代码：
+在学习Spring WebFlux之前，我们先来了解JDK的Stream，虽然他们之间没有直接的关系，有趣的是 Spring Web Flux 基于 Reactive Stream，他们中都带了 Stream。现有需求如下：筛选出一个数组中的偶数，每个增加 100 后输出到控制台，我们来看下使用JDK Stream和使用Reactor（Reactive Stream的一种实现，后面会讲）编写的代码：
 
 ```java
 // JDK Stream实现
@@ -35,11 +35,13 @@ Java8中有两大最为重要的改变：第一个是 Lambda 表达式；另外�
 Stream 是 Java8 中处理集合的关键抽象概念，它可以指定你希望对集合进行的操作，可以执行非常复杂的查找、过滤和映射数据等操作。使用Stream API 对集合数据进行操作，就类似于使用 SQL 执行的数据库查询。也可以使用 Stream API 来并行执行操作。简而言之，Stream API 提供了一种高效且易于使用的处理数据的方式。
 
 ## Stream的用法
-1. 创建 Stream
+**1. 创建 Stream**
 > 一个数据源（如：集合、数组）， 获取一个流。
-2. 中间操作
+
+**2. 中间操作**
 > 一个中间操作链，对数据源的数据进行处理。
-3. 终端操作（终止操作）
+
+**3. 终端操作（终止操作）**
 > 一个终止操作，执行中间操作链，并产生结果 。
 
 ## Stream的分类
