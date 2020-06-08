@@ -244,4 +244,6 @@ Stream.generate(() -> RandomUtil.randomInt(3, 50))
         .forEach(System.out::println);
 ```
 
+源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>
+
 以上是本期笔记的内容，我们下期见。
