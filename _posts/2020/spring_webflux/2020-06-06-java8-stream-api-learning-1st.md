@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 前传：学习 JAVA 8 - 掌握 Stream API （1）
+title: Spring WebFlux 学习笔记 - (一) 前传:学习Java 8 Stream Api (1) - 创建 Stream
 categories: SpringWebFlux
 description: Spring Web Flux 学习笔记, Stream, Stream Api
 keywords: Spring Web Flux, Stream, Reactor
@@ -34,7 +34,7 @@ Java8中有两大最为重要的改变：第一个是 Lambda 表达式；另外�
 
 Stream 是 Java8 中处理集合的关键抽象概念，它可以指定你希望对集合进行的操作，可以执行非常复杂的查找、过滤和映射数据等操作。使用Stream API 对集合数据进行操作，就类似于使用 SQL 执行的数据库查询。也可以使用 Stream API 来并行执行操作。简而言之，Stream API 提供了一种高效且易于使用的处理数据的方式。
 
-## Stream的用法
+## Stream的使用流程
 **1. 创建 Stream**
 > 一个数据源（如：集合、数组）， 获取一个流。
 
@@ -54,11 +54,20 @@ Stream 是 Java8 中处理集合的关键抽象概念，它可以指定你希望
 4 | LongStream | 长整型Stream
 5 | DoubleStream | 浮点型Stream
 
-3-5的具体类型Stream提供了一些额外的方法，下面创建Stream时有用到。它们之间的类图关系如下：
+序号3-5的具体类型Stream提供了一些额外的方法，在下面章节【创建Stream】时有用到。它们之间的类图关系如下：
 
 <img src="/images/posts/spring_web_flux/01_stream_diagram.png" width="100%" alt="Stream API Class Diagram" />
 
 ## 创建Stream
+创建Stream主要分为如下几种方式：
+1. 集合获取Stream
+2. 数组创建Stream
+3. 值创建Stream
+4. 函数创建Stream
+5. 其他方式创建Stream
+
+由于篇幅问题及考虑到Stream提供的操作方法没有讲解，下面的示例代码中只是提供了创建Stream的示例，具体的使用示例请看代码。
+
 `注意：以下创建Stream的方式仅为演示使用，因为Stream进行中间操作或终端操作后就会关闭，不可重复使用，因此你在使用的时候应该按函数式编程方式编写代码。`
 
 **1. 集合获取Stream**
@@ -126,6 +135,7 @@ Stream<Integer> buildStream = builder.build();
 > 以上代码见CreateStreamTest。
 
 源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>{:target="_blank"}
+
 以上是本次笔记的内容，我们下次见。
 
 # 参考
