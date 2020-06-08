@@ -218,7 +218,7 @@ log.info("语句[{}\n{}\n{}\n]使用的字母个数为：{}", sentence1, sentenc
 1 | Stream<T> | Stream<T> sorted(); | 正序排序，返回由此流的元素组成的流，根据自然顺序排序。 
 2 | Stream<T> | Stream<T> sorted(Comparator<? super T> comparator); | 返回由该流的元素组成的流，根据提供的 Comparator进行排序。 
 
-> 以下代码见 StreamSearchOperationTest。
+> 以下代码见 StreamSortedOperationTest。
 
 #### sorted的使用
 
