@@ -48,6 +48,7 @@ ForkJoinTask 是 ForkJoinPool 线程之中执行的任务的基本类型。我�
 如下是使用 Fork/Join 方式实现的1至1000006587的 Fork/Join 方式累加，我们和单线程的循环累加做了下对比，在 Intel i5-4460 的 PC 机器下，单线程执行使用了 650 ms，使用了 Fork/Join 方式执行 210 ms，优化效果挺明显。 
 
 ```java
+
 public class NumberAddTask extends RecursiveTask<Long> {
 
     private static final int THRESHOLD = 10_0000;
@@ -77,9 +78,7 @@ public class NumberAddTask extends RecursiveTask<Long> {
     }
 }
 
-/**
- * 1至1000006587的Fork/Join方式累加
- */
+// 1至1000006587的Fork/Join方式累加
 @Test
 public void testAddForkJoin() {
     long begin = System.currentTimeMillis();
@@ -89,6 +88,7 @@ public void testAddForkJoin() {
     long end = System.currentTimeMillis();
     log.info("ForkJoin方式执行时间：{}ms", end - begin);
 }
+
 ```
 
 > 以上代码见 StreamOtherTest 。
@@ -98,10 +98,6 @@ public void testAddForkJoin() {
 我使用 Java 8 官方 Api 中 RecursiveTask 的示例，创建了一个计算斐波那契数列的 Fork/Join 实现，虽然官方也提到了这是愚蠢的实现斐波那契数列方法，甚至效果还不如单线程的递归计算，但是这也说明了 Fork/Join 并非万能的。
 
 ```java
-/**
- * 本方法根据官方Api提供的Fork/Join方式测试斐波那契数列<br />
- * 效果不佳，甚至不如单线程的递归方式，也充分说明Fork/Join不是完成能。
- */
 @Test
 public void testForkJoin() {
     // 执行f(40) = 102334155使用3411ms
@@ -115,9 +111,7 @@ public void testForkJoin() {
     log.info("ForkJoin方式执行时间：{}ms", end - begin);
 }
 
-/**
- * 不用递归计算斐波那契数列反而更快
- */
+// 不用递归计算斐波那契数列反而更快
 @Test
 public void testFibonacci() {
     // 执行f(50000) 使用 110ms
