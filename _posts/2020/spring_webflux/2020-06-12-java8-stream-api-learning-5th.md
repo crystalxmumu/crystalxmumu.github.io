@@ -353,3 +353,8 @@ list.stream()
 以上是前传部分的学习内容了，接下来我们将进入到 Reactor 部分的学习。
 
 源码下载：<https://github.com/crystalxmumu/spring-web-flux-study-note>
+
+# 引用
+1. [【Java8新特性】关于Java8的Stream API，看这一篇就够了](https://www.cnblogs.com/binghe001/p/12940721.html){:target="_blank"}
+2. [一文秒懂 Java Fork/Join](https://www.twle.cn/c/yufei/javatm/javatm-basic-forkjoin.html){:target="_blank"}
+3. [深入浅出parallelStream](https://blog.csdn.net/u011001723/article/details/52794455){:target="_blank"}
