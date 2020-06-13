@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring WebFlux 学习笔记 - (一) 前传 : 学习Java 8 Stream Api (1) - 创建 Stream
+title: Spring WebFlux 学习笔记 - (一) 前传：学习Java 8 Stream Api (1) - 创建 Stream
 categories: SpringWebFlux
 description: Spring Web Flux 学习笔记, Stream, Stream Api
 keywords: Spring Web Flux, Stream, Reactor
