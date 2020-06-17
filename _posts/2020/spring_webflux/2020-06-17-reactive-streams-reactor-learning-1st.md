@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring WebFlux 学习笔记 - (二) 开篇：学习响应式编程 Reactor (1) - Stream 周边及其他
+title: Spring WebFlux 学习笔记 - (二) 开篇：学习响应式编程 Reactor (1) - 响应式编程
 categories: SpringWebFlux
 description: Spring Web Flux 学习笔记, Reactor 学习系列, 响应式编程
 keywords: Spring Web Flux, Reactive Streams, Reactor
