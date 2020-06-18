@@ -8,7 +8,8 @@ keywords: Spring Web Flux, Reactive Streams, Reactor
 
 # Reactor
 
-Reactor 是用于 Java 的异步非阻塞响应式编程框架，同时具备背压控制的能力。它与 Java 8 函数式 Api 直接集成，比如 分为CompletableFuture、Stream、以及 Duration。它提供了异步 Api 响应流 Flux （用于 [0 - N] 个元素）和 Mono （用于 [0|1] 个元素），并完全遵守和实现了响应式规范。
+Reactor 是用于 Java 的异步非阻塞响应式编程框架，同时具备背压控制的能力。它与 Java 8 函数式 Api 直接集成，比如 分为CompletableFuture、Stream、以及 Duration
+。它提供了异步 Api 响应流 Flux （用于 [0 - N] 个元素）和 Mono （用于 [0或1] 个元素），并完全遵守和实现了响应式规范。
 
 ## 引入 reactor
 
@@ -237,7 +238,7 @@ Stack trace:
 
 > 由于该代理是在加载类时对其进行检测，因此放置它的最佳位置是在main（String []）方法中的所有其他项之前
 
-**3. 如果是测试类，使用如下代码处理现有的类 **
+**3. 如果是测试类，使用如下代码处理现有的类**
 
 > 注意，在测试类中需要提前运行，比如在 @Before 中
 
@@ -251,6 +252,8 @@ ReactorDebugAgent.processExistingClasses();
 本篇我们了解了如何引入 Reactor ；初步体验了 Reactor 的 Hello World 代码；最后我们了解了如何测试及调试 Reactor，这些内容为我们后面学习 Reactor 的基础，希望大家都能掌握。
 
 今天的内容就学到这里，我们下篇开始 Reactor 的基础和特性学习。
+
+源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>{:target="_blank"} 下 02-reactor-core-learning 模块。
 
 # 参考
 1. [Reactor 3 Reference Guide](https://projectreactor.io/docs/core/release/reference/){:target="_blank"}
