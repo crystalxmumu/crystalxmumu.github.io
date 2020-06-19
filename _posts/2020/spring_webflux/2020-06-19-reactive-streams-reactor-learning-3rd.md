@@ -10,13 +10,13 @@ keywords: Spring Web Flux, Reactive Streams, Reactor
 
 Reactor 项目的主要 artifact 是 reactor-core，这是一个基于 Java 8 的实现了响应式流规范的响应式库。
 
-Reactor 提供了实现 Publisher 的响应式类 Flux 和 Mono，以及丰富的操作符。一个 Flux 代表 0...N 个元素的响应式流；一个 Mono 代表 0|1 个元素的响应式流。
+Reactor 提供了实现 Publisher 的响应式类 Flux 和 Mono，以及丰富的操作符。一个 Flux 代表 0...N 个元素的响应式流；一个 Mono 代表 0\|1 个元素的响应式流。
 
 Flux 和 Mono 之间可以转换，比如 Flux 的 count 操作（计算流中元素个数）返回 Mono，Mono 的 concatWith 操作（连接另一个响应式流）返回 Flux。
 
 ## Flux
 
-Flux<T> 是一个能够发出 0 到 N 个元素的标准 Publisher<T>，它会被一个完成（completion）或错误（error）信号终止。因此，一个 Flux 的可能结果是 value、completion
+Flux\<T\> 是一个能够发出 0 到 N 个元素的标准 Publisher\<T\>，它会被一个完成（completion）或错误（error）信号终止。因此，一个 Flux 的可能结果是 value、completion
  或 value，这三个分别会传递给订阅者中的 onNext、onComplete、onError 方法。
  
 > 注意：所有的信号事件，包括代表终止的信号事件都是可选的。如果没有 onNext 事件，但是有 onComplete 事件，那么发出的就是空的有限流；如果去掉 onComplete
@@ -37,7 +37,7 @@ Flux<T> 是一个能够发出 0 到 N 个元素的标准 Publisher<T>，它会�
 
 ## Mono
 
-Mono<T> 是一种特殊的Publisher<T>，它最多只能发出一个元素，然后（可选的）终止于 onComplete 或 onError 信号。
+Mono\<T\> 是一种特殊的Publisher\<T\>，它最多只能发出一个元素，然后（可选的）终止于 onComplete 或 onError 信号。
 
 Mono 中的操作符是 Flux 中操作符的子集，即 Flux 中只有部分操作符适用于 Mono，有些操作符是将 Mono 和另一个 Publisher 连接转换为 Flux。例如，Mono#concatWith(Publisher
 ) 转换为 Flux，Mono#then(Mono) 返回另一个 Mono。
