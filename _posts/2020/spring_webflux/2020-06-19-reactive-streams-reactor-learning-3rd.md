@@ -219,7 +219,8 @@ Flux.range(1, 10)
 
 今天的内容就学到这里，我们下篇开始学习 Reactor 的操作符。
 
-源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>{:target="_blank"} 下 02-reactor-core-learning 模块。
+源码详见：<https://github.com/crystalxmumu/spring-web-flux-study-note>{:target="_blank"} 下 02-reactor-core-learning
+ 模块下 ReactorBasicLearningTest 测试类。
 
 # 参考
 1. [Reactor 3 Reference Guide](https://projectreactor.io/docs/core/release/reference/){:target="_blank"}
