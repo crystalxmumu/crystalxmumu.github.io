@@ -181,7 +181,7 @@ subscribe(Subscriber<? super T> actual); // ⑥
 
 来看下序号 ⑤ 的 subscribe 的弹珠图：
 
-<img src="/images/posts/spring_web_flux/11_reactor_flux_generate.png" alt="通过 generate 创建" />
+<img src="/images/posts/spring_web_flux/12_reactor_flux_subscribe.png" alt="subscribe" />
 
 ```java
 Flux.range(1, 4)
