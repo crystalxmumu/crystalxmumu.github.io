@@ -139,6 +139,18 @@ Flux.empty().subscribe(System.out::println, System.out::println, () -> System.ou
 Flux.never().subscribe(System.out::println, System.out::println, () -> System.out.println("结束"));
 ```
 
+### error
+
+生成一个错误流。error 有 3 个重载方法，它们的主要区别是否立即生成错误及是否由 Supplier 提供，见图识意：
+
+<img src="/images/posts/spring_web_flux/13_reactor_flux_error.png" alt="通过 error 创建" />
+
+```java
+Flux.error(new IllegalStateException(), true)
+    .log()
+    .subscribe(System.out::println, System.err::println);
+```
+
 ### 其它
 
 Flux 和 Mono 还提供了编程式的创建数据流的方法，诸如 create、generate、push、handle 等的方式，这些内容暂时不是我们的重点，这里我们不细展开，感兴趣的可看 Api 进行研究下。
