@@ -10,12 +10,6 @@ keywords: Spring Web Flux, Reactive Streams, Reactor, reactor operators
 
 上篇文章我们将 Flux 和 Mono 的操作符分了 11 类，我们来继续学习转换类操作符的第 2 篇。 
 
-如同 Java Stream 的中间操作一样，Reactor 的 Flux 和 Mono 也为我们提供了多种操作符（远多于 Stream ），我们将它们分类如下：
-
-序号 | 类型 | 操作符
----|---|---
-1 | 转换 | concatMap, concatMapDelayError, concatMapIterable, elapsed, expand, expandDeep, flatMap, flatMapDelayError, flatMapIterable, flatMapSequential, flatMapSequentialDelayError, groupJoin, handle, index, join, map, switchMap, switchOnFirst, then, thenEmpty, thenMany, timestamp, transform, transformDeferred
-
 ## 转换类操作符
 
 转换类的操作符数量最多，平常过程中也是使用最频繁的。
